@@ -1,0 +1,7 @@
+# @name teste
+GET http://localhost:3333
+
+###
+
+# @name prompt
+GET http://localhost:3333/prompts
