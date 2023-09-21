@@ -5,3 +5,38 @@ GET http://localhost:3333
 
 # @name prompt
 GET http://localhost:3333/prompts
+
+###
+
+# @name upload
+POST http://localhost:3333/videos
+Content-Type: multipart/form-data; boundary=----teste
+
+------teste
+Content-Disposition: form-data; name="file"; filename="Avicii - The Nights.mp3"
+Content-Type: audio/mpeg
+
+< ./Avicii - The Nights.mp3
+------teste--
+
+###
+
+# @name transcription
+POST http://localhost:3333/videos/f847efe4-5080-4f98-9e17-4c82e243d479/transcription
+Content-Type: application/json
+
+{
+    "prompt": "live, life, young"
+}
+
+###
+
+# @name generate-ai
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+    "videoId": "f847efe4-5080-4f98-9e17-4c82e243d479",
+    "temperature": 0.5,
+    "prompt": "gerar resumo do video informado a seguir: '''{transcription} '''"
+}
