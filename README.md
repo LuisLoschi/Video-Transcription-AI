@@ -1,10 +1,14 @@
 <h1 align= "center" font-size="30px"> 
-    IA generativa para criação de títulos e descrições de vídeos <br><br>NLW IA | Trilha Mastery<br><br>
-    
-<div align= "left">
-    <p>🎬 Demonstração</p>
-</div>
+    IA generativa para criação de títulos e descrições de vídeos
 </h1>
+
+<h3 align= "center">
+    NLW IA | Trilha Mastery
+</h3>
+
+<br>
+
+ # 🎬 Demonstração
 
 <div align= "center">
     <img src="./demonstration.gif" />
