@@ -39,7 +39,7 @@ Para executar o Front-End localmente:
 
 ```
 # Clone este repositório
-$ git clone https://github.com/jlima004/NLW-IA-WEB.git
+$ git clone https://github.com/LuisLoschi/upload-ia.git
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd upload-ai-web
